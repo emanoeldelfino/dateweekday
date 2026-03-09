@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Handle date change
     dateInput.addEventListener('change', (e) => {
         const selectedDate = e.target.value;
-        
+
         if (selectedDate) {
             updateWeekday(selectedDate);
         } else {
@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Show result with a slight delay for better feel
         resultContainer.classList.remove('hidden');
-        
+
         // Add a small animation effect
         weekdayDisplay.style.opacity = '0';
         weekdayDisplay.style.transform = 'translateY(10px)';
-        
+
         setTimeout(() => {
             weekdayDisplay.textContent = weekdayName;
             weekdayDisplay.style.opacity = '1';
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('mouseenter', () => {
         card.style.transition = 'none';
     });
-    
+
     document.addEventListener('mouseleave', () => {
         card.style.transition = 'all 0.5s ease';
         card.style.transform = `rotateY(0deg) rotateX(0deg)`;

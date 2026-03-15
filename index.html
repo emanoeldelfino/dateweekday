@@ -31,14 +31,16 @@
                     </svg>
                 </div>
                 <h1>Weekday Finder</h1>
-                <p>Select a date to see its weekday</p>
+                <p>Enter a date to see its weekday</p>
             </header>
 
             <div class="input-group">
-                <label for="date-input" class="sr-only">Choose a date</label>
+                <label for="date-input" class="sr-only">Enter a date</label>
                 <div class="date-input-wrapper">
-                    <input type="date" id="date-input" class="date-picker">
+                    <input type="text" id="date-input" class="date-picker" placeholder="DD/MM/YYYY" maxlength="10"
+                        inputmode="numeric">
                 </div>
+                <p id="error-message" class="error-message hidden">Please enter a valid date</p>
             </div>
 
             <div id="result-container" class="result-container hidden">
